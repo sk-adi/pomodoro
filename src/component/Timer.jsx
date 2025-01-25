@@ -42,21 +42,22 @@ function Timer(props) {
       }}
       className="flex justify-center items-center h-screen bg-gray-900 bg-opacity-60"
     >
-      <div className="text-center p-12 rounded-xl shadow-lg w-96 bg-opacity-0">
-        <h1 className="text-7xl font-extrabold text-white mb-8 tracking-tight">{time}</h1>
+      <div className="text-center p-12 rounded-xl shadow-lg w-96 bg-opacity-60">
+        <h1 className="text-9xl font-extrabold text-white mb-8 tracking-tight">{time}</h1>
         <div className="flex justify-center gap-8">
           <button
             onClick={handleOnStart}
-            className="px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 transition duration-200"
+            className="px-8 py-4 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 transition duration-200"
           >
             Start
           </button>
           <button
             onClick={handleOnReset}
-            className="px-8 py-4 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-500 transition duration-200"
+            className="px-8 py-4 bg-gray-600 text-white font-semibold rounded-full hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-500 transition duration-200"
           >
             Reset
           </button>
+          
         </div>
       </div>
     </div>
