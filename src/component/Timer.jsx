@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function Timer(props) {
-  const focustime = props.timeInSeconds || 10;
+  const focustime = props.userTime || 10;
   const totalTime = `${focustime}:00`;
 
   const [time, Settime] = useState(totalTime);
